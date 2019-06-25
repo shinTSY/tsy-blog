@@ -1,7 +1,10 @@
 import React, {Component} from 'react'
-import {Form, Icon, Input, Button, Checkbox, Typography, Divider} from 'antd'
+import {connect} from 'react-redux'
+import {Redirect} from 'react-router-dom'
+import {Form, Icon, Input, Button, Typography, Divider} from 'antd'
 
 import './register.less'
+import {register} from '../../redux/actions'
 
 const {Title} = Typography
 
@@ -11,12 +14,22 @@ class Register extends Component {
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values)
+                this.props.register({username: values.username, password: values.password})
             }
         })
     }
 
+    toLogin = (e) => {
+        e.preventDefault()
+        this.props.history.replace('/login')
+    }
+
     render() {
         const {getFieldDecorator} = this.props.form
+        const {_id} = this.props.user
+        if(_id){
+          return <Redirect to='/'/>
+        }
         return (
             <div className="background">
                 <div className="form-login">
@@ -56,10 +69,13 @@ class Register extends Component {
                             )}
                         </Form.Item>
                         <Form.Item>
-                            <Button type="primary" htmlType="submit" className="login-form-button login-btn">
+                            <Button
+                                type="primary"
+                                htmlType="submit"
+                                className="login-form-button login-btn">
                                 注&nbsp;&nbsp;&nbsp;&nbsp;册
                             </Button>
-                            <a href="">现在就去登录！</a>
+                            <a href="#" onClick={this.toLogin}>现在就去登录！</a>
                         </Form.Item>
                     </Form>
                 </div>
@@ -70,4 +86,7 @@ class Register extends Component {
 
 const RegisterForm = Form.create()(Register)
 
-export default RegisterForm
+export default connect(
+    state => ({user: state.user}),
+    {register}
+)(RegisterForm)
