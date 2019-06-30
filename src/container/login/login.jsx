@@ -1,7 +1,10 @@
 import React, {Component} from 'react'
-import {Form, Icon, Input, Button, Typography, Divider} from 'antd'
+import {Form, Icon, Input, Button, Typography, Divider, message} from 'antd'
+import {Redirect} from 'react-router-dom'
+import {connect} from 'react-redux'
 
 import './login.less'
+import {login} from '../../redux/actions'
 
 const {Title} = Typography
 
@@ -12,16 +15,24 @@ class Login extends Component {
             if (!err) {
                 console.log('Received values of form: ', values)
             }
+            this.props.login(values)
         })
     }
 
-     toRegister = (e) => {
+    toRegister = (e) => {
         e.preventDefault()
         this.props.history.replace('/register')
     }
 
     render() {
         const {getFieldDecorator} = this.props.form
+        const {_id, msg} = this.props.user
+        if (_id) {
+            message.success('登录成功！')
+            return <Redirect to='/'/>
+        } else if (msg) {
+            message.error(msg)
+        }
         return (
             <div className="background">
                 <div className="form-login">
@@ -64,4 +75,9 @@ class Login extends Component {
 
 const LoginForm = Form.create()(Login)
 
-export default LoginForm
+export default connect(
+    state => ({user: state.user}),
+    {
+        login
+    }
+)(LoginForm)

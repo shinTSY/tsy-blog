@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Redirect} from 'react-router-dom'
-import {Form, Icon, Input, Button, Typography, Divider} from 'antd'
+import {Form, Icon, Input, Button, Typography, Divider, message} from 'antd'
 
 import './register.less'
 import {register} from '../../redux/actions'
@@ -12,9 +12,13 @@ class Register extends Component {
     handleSubmit = e => {
         e.preventDefault()
         this.props.form.validateFields((err, values) => {
+            const {username, password, confirmPassword} = values
             if (!err) {
                 console.log('Received values of form: ', values)
-                this.props.register({username: values.username, password: values.password})
+                if(password !== confirmPassword){
+                    return message.error('两次密码要一致哦~')
+                }
+                this.props.register({username, password})
             }
         })
     }
@@ -26,9 +30,12 @@ class Register extends Component {
 
     render() {
         const {getFieldDecorator} = this.props.form
-        const {_id} = this.props.user
-        if(_id){
-          return <Redirect to='/'/>
+        const {_id, msg} = this.props.user
+        if (_id) {
+            message.success('恭喜您，注册成功~')
+            return <Redirect to='/'/>
+        } else if (msg) {
+            message.error(msg)
         }
         return (
             <div className="background">
