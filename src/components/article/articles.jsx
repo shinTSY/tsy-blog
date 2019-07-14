@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {withRouter, Link} from 'react-router-dom'
 import {List, Typography, Pagination} from 'antd'
+import QueueAnim from 'rc-queue-anim'
+import Texty from 'rc-texty'
 
 const data = [
     'Racing car sprays burning fuel into crowd.',
@@ -23,19 +25,21 @@ class Articles extends Component {
     render() {
         return (
             <div style={{height: '100%', position: 'relative'}}>
-                <h3 style={{marginBottom: 28}}>文章列表</h3>
+                <h3 style={{marginBottom: 28}}><Texty>文章列表</Texty></h3>
                 <List
                     header={<div>Header</div>}
                     bordered
-                    dataSource={data}
-                    renderItem={item => (
-                        <Link to="/detail/1">
-                            <List.Item>
-                                <Typography.Text mark>[ITEM]</Typography.Text> {item}
+                >
+                    <QueueAnim delay={300}>
+                        {data.map((item, index) => (
+                            <List.Item key={index}>
+                                <Link to="/detail/1">
+                                    <Typography.Text mark>[ITEM]</Typography.Text> {item}
+                                </Link>
                             </List.Item>
-                        </Link>
-                    )}
-                />
+                        ))}
+                    </QueueAnim>
+                </List>
                 <Pagination style={{position: 'absolute', bottom: 10, left: '50%', transform: "translateX(-50%)"}}
                             showQuickJumper defaultCurrent={1} total={50} onChange={this.onChange}/>
             </div>

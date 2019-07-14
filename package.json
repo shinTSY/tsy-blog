@@ -8,6 +8,7 @@
     "less": "2.7.3",
     "less-loader": "^5.0.0",
     "rc-queue-anim": "^1.6.12",
+    "rc-texty": "^0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.1.0",
