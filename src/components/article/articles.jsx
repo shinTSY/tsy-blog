@@ -1,8 +1,11 @@
 import React, {Component} from 'react'
 import {withRouter, Link} from 'react-router-dom'
+import {connect} from 'react-redux'
 import {List, Typography, Pagination} from 'antd'
 import QueueAnim from 'rc-queue-anim'
 import Texty from 'rc-texty'
+
+import {getArticle} from '../../redux/actions'
 
 const data = [
     'Racing car sprays burning fuel into crowd.',
@@ -18,11 +21,21 @@ const data = [
 ]
 
 class Articles extends Component {
+
+    componentDidMount() {
+        this.props.getArticle()
+    }
+
     onChange = (pageNumber) => {
         console.log(pageNumber)
     }
 
     render() {
+        const {articleList} = this.props.article
+        if (articleList.length <= 0) {
+            return null
+        }
+
         return (
             <div style={{height: '100%', position: 'relative'}}>
                 <h3 style={{marginBottom: 28}}><Texty>文章列表</Texty></h3>
@@ -31,10 +44,10 @@ class Articles extends Component {
                     bordered
                 >
                     <QueueAnim delay={300}>
-                        {data.map((item, index) => (
-                            <List.Item key={index}>
-                                <Link to="/detail/1">
-                                    <Typography.Text mark>[ITEM]</Typography.Text> {item}
+                        {articleList.map(item => (
+                            <List.Item key={item._id}>
+                                <Link to={`/detail/${item._id}`}>
+                                    <Typography.Text mark>[{item.tags.toString()}]</Typography.Text> {item.title}
                                 </Link>
                             </List.Item>
                         ))}
@@ -47,4 +60,7 @@ class Articles extends Component {
     }
 }
 
-export default withRouter(Articles)
+export default connect(
+    state => ({article: state.article}),
+    {getArticle}
+)(withRouter(Articles))
