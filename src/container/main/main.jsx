@@ -14,6 +14,13 @@ const {SubMenu} = Menu
 const {Header, Content, Footer, Sider} = Layout
 
 class Main extends Component {
+
+    getRouterIndex = (pathName) => {
+        const routerArray = ['/', '/life', '/about']
+        const routeIndex = routerArray.findIndex((route) => route === pathName)
+        return [`${routeIndex + 1}`]
+    }
+
     changePage = ({item, key, keyPath, domEvent}) => {
         switch (key) {
             case '1':
@@ -43,7 +50,7 @@ class Main extends Component {
                     <Menu
                         theme="dark"
                         mode="horizontal"
-                        defaultSelectedKeys={['1']}
+                        defaultSelectedKeys={this.getRouterIndex(this.props.location.pathname)}
                         style={{lineHeight: '64px'}}
                         onClick={this.changePage}
                     >
