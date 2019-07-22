@@ -6,9 +6,9 @@ const initUser = {}
 function user(state = initUser, action) {
     switch (action.type) {
         case SUCCESS_AUTH:
-            return {...initUser, ...action.data}
+            return {...state, ...action.data}
         case ERROR_MSG:
-            return {...initUser, msg: action.data}
+            return {...state, msg: action.data}
         default:
             return state
     }
@@ -21,9 +21,9 @@ const initArticle = {
 function article(state = initArticle, action) {
     switch (action.type) {
         case RECEIVE_ARTICLES:
-            return {...initArticle, articleList: [...action.data]}
+            return {...state, articleList: [...action.data]}
         case RECEIVE_ARTICLE:
-            return {...initArticle, currentArticle: action.data}
+            return {...state, currentArticle: action.data}
         default:
             return state
     }

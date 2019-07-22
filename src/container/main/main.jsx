@@ -8,6 +8,8 @@ import ArticleDetail from '../../components/article-detail/article-detail'
 import About from '../../components/about/about'
 import Life from '../../components/life/life'
 
+import './main.less'
+
 const {SubMenu} = Menu
 const {Header, Content, Footer, Sider} = Layout
 
@@ -50,8 +52,13 @@ class Main extends Component {
                         <Menu.Item key="3"><Icon type="user"/>关于我</Menu.Item>
                     </Menu>
                 </Header>
-                <Content style={{padding: '0 50px'}}>
-                    <Layout style={{padding: '24px 0', background: '#fff', height: '100%'}}>
+                <Content style={{padding: '0 50px'}} className="bg-wrapper">
+                    <Layout style={{
+                        padding: '24px 0',
+                        background: 'rgba(255, 255, 255, .97)',
+                        height: '100%',
+                        boxShadow: '0px 0 10px 1px rgba(0,0,0, 0.3)'
+                    }}>
                         <Content style={{padding: '0 24px', minHeight: 280}}>
                             <Switch>
                                 <Route path="/detail/:chapterId" component={ArticleDetail}/>
@@ -62,7 +69,7 @@ class Main extends Component {
                         </Content>
                     </Layout>
                 </Content>
-                <Footer style={{textAlign: 'center', zIndex: 3}}>shinTSY</Footer>
+                <Footer style={{textAlign: 'center', zIndex: 3}} className="bg-wrapper">shinTSY</Footer>
             </Layout>
         )
     }
