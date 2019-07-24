@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dbc4104-6756-4682-8a84-297b875d436e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/life/images/IMG_0860.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/life/images/IMG_0877.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/life/images/IMG_0913.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/life/images/chicken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/life/life.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/IMG_0877.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/main/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/main/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/life/life.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/life/life.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +22,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/container/main/main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="21" column="78" lean-forward="true" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+            <state relative-caret-position="414">
+              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/about/about.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -32,7 +50,28 @@
         <entry file="file://$PROJECT_DIR$/src/container/main/main.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/life/life.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="30" column="109" selection-start-line="30" selection-start-column="109" selection-end-line="30" selection-end-column="109" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/life/life.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -68,7 +107,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/article-detail/article-detail.css" />
         <option value="$PROJECT_DIR$/src/components/about/impress.js" />
-        <option value="$PROJECT_DIR$/src/components/life/life.jsx" />
         <option value="$PROJECT_DIR$/src/components/about/about.jsx" />
         <option value="$PROJECT_DIR$/src/api/index.js" />
         <option value="$PROJECT_DIR$/src/redux/actions-type.js" />
@@ -78,16 +116,18 @@
         <option value="$PROJECT_DIR$/src/redux/reducers.js" />
         <option value="$PROJECT_DIR$/src/container/main/main.less" />
         <option value="$PROJECT_DIR$/src/container/main/main.jsx" />
+        <option value="$PROJECT_DIR$/src/components/life/life.less" />
+        <option value="$PROJECT_DIR$/src/components/life/life.jsx" />
       </list>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="height" value="972" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,12 +156,6 @@
               <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -129,53 +163,28 @@
               <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="about" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="article-detail" type="462c0819:PsiDirectoryNode" />
+              <item name="life" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="container" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="life" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tsy-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="tsy-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,7 +196,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/life/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -201,6 +210,7 @@
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/life/images" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components/about" />
       <recent name="$PROJECT_DIR$/src" />
@@ -257,15 +267,15 @@
       <workItem from="1563201619390" duration="809000" />
       <workItem from="1563202840786" duration="414000" />
       <workItem from="1563455439831" duration="487000" />
-      <workItem from="1563456080228" duration="7630000" />
+      <workItem from="1563456080228" duration="10698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36798000" />
+    <option name="totallyTimeSpent" value="39866000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="972" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988426" visible="true" weight="0.16727717" />
@@ -407,32 +417,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/about/impress-demo.css" />
     <entry file="file://$PROJECT_DIR$/src/components/about/impress.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/about/about.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/life/life.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/article-detail/article-detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -514,17 +500,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/main/main.less">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="186">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/about/about.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/container/main/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="21" column="78" lean-forward="true" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+        <state relative-caret-position="414">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/main/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/life/life.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/life/images/IMG_0755.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/IMG_0877.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/life/life.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="109" selection-start-line="30" selection-start-column="109" selection-end-line="30" selection-end-column="109" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
