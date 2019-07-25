@@ -50,7 +50,7 @@ class Main extends Component {
                     <Menu
                         theme="dark"
                         mode="horizontal"
-                        defaultSelectedKeys={this.getRouterIndex(this.props.location.pathname)}
+                        defaultSelectedKeys={this.getRouterIndex(this.props.location.pathname) || ['1']}
                         style={{lineHeight: '64px'}}
                         onClick={this.changePage}
                     >
